@@ -1,0 +1,14 @@
+node_modules/
+.idea
+.vscode
+dist
+swag.yml
+coverage/
+docker/data
+junit.xml
+test/errors.log
+tmp/
+.DS_Store
+src/.DS_Store
+.auth_key
+.db_creds
