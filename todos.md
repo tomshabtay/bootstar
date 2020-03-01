@@ -9,6 +9,7 @@ TODO: debug tests
 TODO: intelij debug mode 
 TODO: middlewares
 TODO: routes
+TODO: github budage
 TODO: dotenv or config typescript
 TODO: request validation (joi)
 TODO: common repository: logger, metrics

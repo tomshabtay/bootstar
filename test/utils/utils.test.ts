@@ -1,6 +1,6 @@
-import { greet } from "../../src/utils/utils";
+import { greet } from '../../src/utils/utils';
 
-describe("utils", () => {
+describe('utils', () => {
     test('should greet', () => {
         expect(greet('DY')).toBe('Hello DY');
     });
