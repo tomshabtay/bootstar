@@ -1,11 +1,9 @@
-import express from 'express';
-import { setupRoutes } from './routes';
+import { app, router, Routes } from "../lib/dy-express/app";
+import bodyParser from 'body-parser';
 
-const PORT = 3000;
-// Create Express server
-const app = express();
-setupRoutes(app);
-// Routes
-app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
+app.use(router);
+
+router.get('/healthcheck', Routes.healthCheck);
+router.post('/healthcheck', bodyParser.json(), Routes.pong);
+
 export default app;
-// TODO: separate Express 'app' and 'server' https://github.com/goldbergyoni/nodebestpractices/blob/master/sections/projectstructre/separateexpress.md

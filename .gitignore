@@ -12,3 +12,4 @@ tmp/
 src/.DS_Store
 .auth_key
 .db_creds
+.env

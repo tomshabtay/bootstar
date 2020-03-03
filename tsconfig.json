@@ -17,7 +17,6 @@
         }
     },
     "include": [
-        "src/**/*",
-        "test/**/*",
+        "src/**/*", "lib/dy-express/app.ts", "lib/dy-express/routes",
     ]
 }

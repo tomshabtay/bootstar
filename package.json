@@ -9,12 +9,12 @@
     "author": "DY",
     "license": "MIT",
     "scripts": {
-        "start": "npm run serve",
-        "serve": "node dist/app.js",
-        "watch": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/app.ts",
+        "start": "npm run build && npm run serve",
+        "serve": "node dist/index.js",
+        "watch": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
         "test": "jest --forceExit --coverage --verbose",
         "test-debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-        "lint": "tsc --noEmit && eslint \"**/*.ts\" --quiet --fix",
+        "lint": "tsc --noEmit && eslint \"src/**/*.ts\" --quiet --fix",
         "build": "npm run build-ts && npm run lint",
         "build-ts": "tsc"
     },
